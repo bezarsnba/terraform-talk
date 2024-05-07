@@ -1,3 +1,27 @@
+## About:
+
+This is a beginner's Terraform usage lab
+
+## Install Terraform
+
+Linux:
+```
+wget -O- https://apt.releases.hashicorp.com/gpg 
+sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+
+```
+
+Mac
+
+```bash
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+```
+
+Ref: https://developer.hashicorp.com/terraform/install
+
 ## Requirements
 
 | Name | Version |
